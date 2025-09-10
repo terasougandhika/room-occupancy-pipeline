@@ -1,6 +1,6 @@
 # Room Occupancy Data Pipeline
 
-This project is an end-to-end data engineering pipeline that simulates processing sensor data to monitor room occupancy and control electrical appliances accordingly.
+This prototype project is an end-to-end data engineering pipeline that simulates processing sensor data to monitor room occupancy and control electrical appliances accordingly.
 
 ## Project Overview
 
