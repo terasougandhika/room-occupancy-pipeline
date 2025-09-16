@@ -10,9 +10,55 @@ The pipeline performs the following steps:
 3.  **Appliance Control Logic**: Determines whether appliances should be ON or OFF based on the room's occupancy.
 4.  **Data Storage**: Stores the processed data with appliance status in a CSV file.
 
+## Project Structure
+```
+room-occupancy-pipeline/
+├── data/
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+├── src/
+│   ├── data_generator.py
+│   └── data_processor.py
+├── .gitignore
+├── main.py
+├── README.md
+└── requirements.txt
+```
+
+## How to Run the Project
+
 ### Prerequisites
 *   Python 3.8+
 *   pip
+
+### Setup and Execution
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/<your-username>/room-occupancy-pipeline.git
+    cd room-occupancy-pipeline
+    ```
+
+2.  **Create a virtual environment (recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+3.  **Install the required dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Run the main pipeline script:**
+    ```bash
+    python main.py
+    ```
+
+This will execute the entire pipeline:
+*   `data/raw/sensor_data.csv` will be created.
+*   `data/processed/appliance_status.csv` will be generated with the final output.
 
 ## Output Data
 
